@@ -1,96 +1,685 @@
 <!DOCTYPE html>
-<html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+  <!--<![endif]-->
   <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="description"
-      content="Group de música de ball folk electrònic"
-    />
+    <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Groovin' CAT</title>
+    <meta name="description" content="" />
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="MobileOptimized" content="320" />
     <meta
       name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+      content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0"
     />
-    <title>Groovin' CAT</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
     <link
-      href="https://fonts.googleapis.com/css2?family=Tektur:wght@700&display=swap"
+      href="https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic|Cousine:400,700|Montserrat:300,400,800|Anton"
       rel="stylesheet"
+      type="text/css"
     />
-    <style>
-      body,
-      html {
-        height: 100%;
-        margin: 0;
-        color: #777;
-        font-family: "Tektur", cursive;
-      }
 
-      .bgimg {
-        position: relative;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
+    <link rel="stylesheet" href="styles/vendor/bootstrap.css" />
+    <link rel="stylesheet" href="styles/vendor/font-awesome.min.css" />
+    <link rel="stylesheet" href="styles/vendor/superslides.css" />
+    <link rel="stylesheet" href="styles/vendor/owl.carousel.css" />
+    <link rel="stylesheet" href="styles/vendor/owl.transitions.css" />
+    <link rel="stylesheet" href="styles/vendor/flickity.min.css" />
+    <link rel="stylesheet" href="styles/vendor/swipebox.min.css" />
+    <link rel="stylesheet" href="styles/vendor/TimeCircles.css" />
 
-        /* The image used */
-        background-image: url("foto.jpg");
+    <link rel="stylesheet" href="styles/main.css" />
+    <!-- <link rel="stylesheet" href="styles/demo.css">
+  <link rel="stylesheet" href="styles/soundlab.css"> -->
 
-        /* Full height */
-        height: 100%;
-      }
-      .caption {
-        opacity: 0.9;
-        position: absolute;
-        left: 0;
-        top: 50%;
-        width: 100%;
-        text-align: center;
-        color: #000;
-      }
+    <!-- <link rel="stylesheet" href="styles/colors/color-yellow.css">
+  <link rel="stylesheet" href="styles/colors/color-lightblue.css">
+  <link rel="stylesheet" href="styles/colors/color-purple.css">
+  <link rel="stylesheet" href="styles/colors/color-green.css">
+  <link rel="stylesheet" href="styles/colors/color-militar.css">
+  <link rel="stylesheet" href="styles/colors/color-caqui.css"> -->
+    <link rel="stylesheet" href="styles/colors/color-red.css" />
 
-      .title {
-        position: absolute;
-        left: 0;
-        top: 10%;
-        width: 100%;
-      }
-
-      .title span.head {
-        margin-left: 5%;
-        background-color: #fff;
-        color: #111;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        padding-right: 8px;
-        padding-left: 12px;
-        letter-spacing: 10px;
-        font-size: 2em;
-      }
-
-      .caption span.border {
-        background-color: #111;
-        color: #fff;
-        padding: 18px;
-        font-size: 25px;
-        letter-spacing: 10px;
-        line-height: 2em;
-      }
-
-      h3 {
-        letter-spacing: 5px;
-        text-transform: uppercase;
-        font: 20px "Lato", sans-serif;
-        color: #111;
-      }
-    </style>
+    <script src="scripts/vendor/modernizr.js"></script>
   </head>
-  <body>
-    <div class="bgimg">
-      <div class="title"><span class="head">Groovin' CAT</span></div>
-      <div class="caption">
-        <span class="border">Properament més informació</span>
+  <body
+    data-spy="scroll"
+    data-target="#navbar-muziq"
+    data-offset="80"
+    class="palettered"
+  >
+    <!-- LOADER -->
+    <div id="mask">
+      <div class="spinner">
+        <div class="bounce1"></div>
+        <div class="bounce2"></div>
+        <div class="bounce3"></div>
       </div>
     </div>
+
+    <!-- HEADER -->
+    <header id="jHeader" class="overflow-video">
+      <nav class="navbar navbar-default" role="navigation">
+        <div class="navbar-header">
+          <button
+            type="button"
+            class="navbar-toggle"
+            data-toggle="collapse"
+            data-target=".navbar-ex1-collapse"
+          >
+            <span class="sr-only">Desplegar navegació</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#anchor00"
+            ><img src="images/logo-white.png" alt="logo"
+          /></a>
+        </div>
+
+        <div
+          class="collapse navbar-collapse navbar-ex1-collapse"
+          id="navbar-muziq"
+        >
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active"><a href="#anchor00">Home</a></li>
+
+            <li><a href="#anchor_player">ESCOLTAR</a></li>
+            <li><a href="#anchor01">MÚSICA</a></li>
+            <li><a href="#anchor04">EL PROJECTE</a></li>
+            <li><a href="#anchor05">QUI SOM</a></li>
+            <li><a href="#anchor06">GALERIA</a></li>
+            <li><a href="#anchor08">CONTACTE</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- INTRO -->
+    <section class="intro full-width full-height jIntro" id="anchor00">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div
+              class="playerVideo"
+              data-property="{videoURL:'MeyI1X-Pl9s',showControls:false,containment:'self',autoPlay:true, mute:false, startAt:0,opacity:1,ratio:'4/3', addRaster:true}"
+            >
+              <!-- Slider -->
+              <a href="#" class="play-video">Play/Pause</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LATEST ALBUM -->
+    <section class="section latest-album" id="anchor01">
+      <div class="container">
+        <div class="voffset70"></div>
+        <div class="title-wrapper">
+          <h2 class="title">ALBUM</h2>
+        </div>
+        <div class="voffset80"></div>
+
+        <div class="row">
+          <div class="col-md-6">
+            <div class="info-album">
+              <div class="cover">
+                <img src="images/albums/cover.jpg" alt="" />
+              </div>
+              <p class="album album-list">Biela</p>
+              <p class="artist">Groovin' CAT</p>
+              <div class="voffset20"></div>
+              <p class="description">
+                Peça d’un mecanisme o d’una màquina consistent en una barra
+                rígida amb un coixinet a cada cap, que transmet el moviment d’un
+                òrgan a un altre i que sovint transforma el moviment alternatiu
+                en circular o viceversa.
+              </p>
+              <br />
+              <p class="description">
+                Biela neix del “groove” de les fàbriques tèxtils de la Catalunya
+                Central, on el so de milers de telers sincronitzats generen una
+                sonoritat repetitiva i hipnotitzadora. En el moment d’escollir
+                les bases musicals, a partir de les quals s'han generat els
+                glitch, s'ha fet recerca de cançons del territori enregistrades
+                per grans mestres.
+              </p>
+              <p class="buyalbum">
+                <a href="#" class="btn square inverse">Comprar</a>
+              </p>
+              <ul class="links">
+                <li><a href="#">Spotify</a></li>
+                <li><a href="#">Lloc 1</a></li>
+                <li><a href="#">Lloc 2</a></li>
+              </ul>
+              <div class="voffset80"></div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="disc-tracklist">
+              <audio preload id="playlist_newalbum"></audio>
+              <ol class="playlist1">
+                <li>
+                  <a href="#" data-src="mp3/01.mp3">
+                    <div class="track-info">
+                      <p class="track-title">Ball pla a Faycelles</p>
+                      <p class="track-album">Biela</p>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" data-src="mp3/02.mp3">
+                    <div class="track-info">
+                      <p class="track-title">Sa Pastera</p>
+                      <p class="track-album">Biela</p>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" data-src="mp3/03.mp3">
+                    <div class="track-info">
+                      <p class="track-title">El cercle del correfoc</p>
+                      <p class="track-album">Biela</p>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" data-src="mp3/01.mp3">
+                    <div class="track-info">
+                      <p class="track-title">Sardana MIC</p>
+                      <p class="track-album">Biela</p>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" data-src="mp3/02.mp3">
+                    <div class="track-info">
+                      <p class="track-title">La bolangera a Manresa</p>
+                      <p class="track-album">Biela</p>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" data-src="mp3/03.mp3">
+                    <div class="track-info">
+                      <p class="track-title">Xotis tramuntana</p>
+                      <p class="track-album">Biela</p>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" data-src="mp3/01.mp3">
+                    <div class="track-info">
+                      <p class="track-title">Sardana crestes de Montserrat</p>
+                      <p class="track-album">Biela</p>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" data-src="mp3/02.mp3">
+                    <div class="track-info">
+                      <p class="track-title">Ballet de muntanya</p>
+                      <p class="track-album">Biela</p>
+                    </div>
+                  </a>
+                </li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BIOGRAPHY -->
+    <section class="section container-fluid full-width biography" id="anchor04">
+      <div class="row">
+        <div class="col-xs-12 col-md-4 col-md-offset-1 biography-description">
+          <h2 class="title inverse">el projecte</h2>
+          <div class="voffset40"></div>
+          <p class="cousine">
+            La clarinetista Sonia Antón, el teclista-tecnòleg Enric Mieza i
+            l’acordionista-tecnòleg Ramon Navarro, es troben en la confluència
+            de la música i el ball tradicional fusionant la sonoritat de la
+            música tradicional i la música actual, el hip-hop i el
+            trad-electrònic en un trio musical: Groovin’ CAT
+          </p>
+          <br />
+          <p class="cousine">
+            Inspirats per Groove Factory, grup francès liderat per Stéphane
+            Milleret, Cyrille Brotto i Mika Fontanella, estudien la fusió de les
+            danses i sonoritats catalanes per poder generar errors (glitch),
+            petits talls de 1 o 2 segons repartits aleatòriament o no per
+            generar un ritme, un “groove”, que acompanyarà la música com si fos
+            un instrument més.
+          </p>
+          <br />
+          <p class="cousine">
+            A partir de la tradició i sempre respectant la ballabilitat com a
+            eix immutable de l’espectacle, el trio composa i arrenja les cançons
+            des dels glitch generats. Així, aconsegueixen un llenguatge propi
+            amb una fusió única entre l’acordió, el clarinet, el sintetitzador
+            analògic i la música actual, posant sempre el ball en primer pla.
+          </p>
+          <div class="voffset40"></div>
+          <p class="montserrat extra-bold cita">
+            “Pensat per ballar, fet per disfrutar”
+          </p>
+          <br />
+          <p>
+            <img src="images/biography/sign.png" alt="" />
+          </p>
+        </div>
+        <div class="col-xs-12 col-md-6 col-sm-offset-1 biography-image"></div>
+      </div>
+    </section>
+
+    <!-- STAY IN TOUCH -->
+    <section class="section featured-artists" id="anchor05">
+      <div class="container">
+        <div class="voffset70"></div>
+        <div class="title-wrapper">
+          <h2 class="title">QUI SOM</h2>
+        </div>
+        <div class="voffset80"></div>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="voffset20"></div>
+            <div
+              class="js-flickity"
+              data-flickity-options='{ "cellAlign": "left", "wrapAround": true, "contain": true, "prevNextButtons": false }'
+            >
+              <div class="gallery-cell col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="featured-artist">
+                  <div class="image">
+                    <img src="images/artists/sonia.jpg" alt="" />
+                  </div>
+                  <div class="rollover">
+                    <ul class="social">
+                      <li>
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="fa fa-instagram"></i></a>
+                      </li>
+                    </ul>
+                    <div class="text">
+                      <h4 class="title-artist">Sonia <br />Anton</h4>
+                      <p>Clarinetista, balladora, compositora.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="gallery-cell col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="featured-artist">
+                  <div class="image">
+                    <img src="images/artists/ramon.jpg" alt="" />
+                  </div>
+                  <div class="rollover">
+                    <ul class="social">
+                      <li>
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                      </li>
+                      <li>
+                        <a href="https://instagram.com/bloodbare"
+                          ><i class="fa fa-instagram"></i
+                        ></a>
+                      </li>
+                    </ul>
+                    <div class="text">
+                      <h4 class="title-artist">Ramon <br />Navarro</h4>
+                      <p>Ballador, acordionaire, compositor i enginyer.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="gallery-cell col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="featured-artist">
+                  <div class="image">
+                    <img src="images/artists/enric.jpg" alt="" />
+                  </div>
+                  <div class="rollover">
+                    <ul class="social">
+                      <li>
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="fa fa-instagram"></i></a>
+                      </li>
+                    </ul>
+                    <div class="text">
+                      <h4 class="title-artist">Enric <br />Mieza</h4>
+                      <p>La ona de so constant i ballarina.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="gallery-cell col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="featured-artist">
+                  <div class="image">
+                    <img src="images/artists/alex.jpg" alt="" />
+                  </div>
+                  <div class="rollover">
+                    <ul class="social">
+                      <li>
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="fa fa-instagram"></i></a>
+                      </li>
+                    </ul>
+                    <div class="text">
+                      <h4 class="title-artist">Alex <br />Sariol</h4>
+                      <p>Les orelles de Groovin' CAT</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="voffset140"></div>
+      </div>
+    </section>
+
+    <!-- PLAYER -->
+    <div class="player horizontal" id="anchor_player">
+      <div class="container">
+        <div class="info-album-player">
+          <div
+            class="album-cover"
+            style="background: url('images/cover-player.jpg') no-repeat center"
+            id="bg-image3"
+          ></div>
+          <p class="album-title">Biela</p>
+          <p class="artist-name">Mostres</p>
+        </div>
+        <div class="player-content">
+          <audio preload></audio>
+          <ol class="playlist">
+            <li><a href="#" data-src="mp3/01.mp3">Ball pla a Faycelles</a></li>
+            <li>
+              <a href="#" data-src="mp3/02.mp3">La bolangera a Manresa</a>
+            </li>
+            <li>
+              <a href="#" data-src="mp3/03.mp3"
+                >Sardana les crestes del Montserrat</a
+              >
+            </li>
+          </ol>
+          <div class="nextprev">
+            <span class="prev">prev</span>
+            <span class="next">next</span>
+          </div>
+          <span class="btnloop">loop</span>
+        </div>
+      </div>
+    </div>
+    <!-- GALLERY -->
+    <section class="section last-media" id="anchor06">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-md-offset-2">
+            <div class="voffset90"></div>
+            <div class="title-wrapper">
+              <h2 class="title">GALERIA</h2>
+            </div>
+            <div class="voffset50"></div>
+          </div>
+        </div>
+        <!-- Filters -->
+        <div class="row">
+          <div class="col-md-12">
+            <ul class="filters">
+              <li
+                data-filter="*"
+                class="is-checked wow fadeInUp"
+                data-wow-delay="0.5s"
+              >
+                All
+              </li>
+              <li
+                data-filter=".image"
+                class="wow fadeInUp"
+                data-wow-delay="0.8s"
+              >
+                Image
+              </li>
+              <li data-filter=".video" class="wow fadeInUp" data-wow-delay="1s">
+                Video
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- gallery -->
+        <div class="row">
+          <div class="col-md-12">
+            <div class="voffset50"></div>
+            <div class="thumbnails">
+              <div class="thumbnail image">
+                <a href="images/gallery/rock.jpg" class="swipebox">
+                  <img src="images/gallery/rock.jpg" alt="" />
+                  <div class="rollover">
+                    <i class="plus"></i>
+                  </div>
+                </a>
+              </div>
+              <div class="thumbnail image">
+                <a href="images/gallery/gallery4.jpg" class="swipebox">
+                  <img src="images/gallery/gallery4.jpg" alt="" />
+                  <div class="rollover">
+                    <i class="plus"></i>
+                  </div>
+                </a>
+              </div>
+              <div class="thumbnail image">
+                <a href="images/gallery/gallery5.jpg" class="swipebox">
+                  <img src="images/gallery/gallery5.jpg" alt="" />
+                  <div class="rollover">
+                    <i class="plus"></i>
+                  </div>
+                </a>
+              </div>
+              <div class="thumbnail image">
+                <a href="images/gallery/grup.jpg" class="swipebox">
+                  <img src="images/gallery/grup.jpg" alt="" />
+                  <div class="rollover">
+                    <i class="plus"></i>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="voffset50"></div>
+            <p class="loadmore">
+              <a id="append" href="#" class="btn square inverse">Més</a>
+            </p>
+            <div id="more-items">
+              <div class="thumbnail image">
+                <a href="images/gallery/groove.jpg" class="swipebox">
+                  <img src="images/gallery/groove.jpg" alt="" />
+                  <div class="rollover">
+                    <i class="plus"></i>
+                  </div>
+                </a>
+              </div>
+              <div class="thumbnail image">
+                <a href="images/gallery/ramon_sonia.jpg" class="swipebox">
+                  <img src="images/gallery/ramon_sonia.jpg" alt="" />
+                  <div class="rollover">
+                    <i class="plus"></i>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="voffset90"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- CONTACTS -->
+    <section class="section inverse-color contact" id="anchor08">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-md-offset-2">
+            <div class="voffset70"></div>
+            <div class="title-wrapper">
+              <h2 class="title inverse">segueix i contacte</h2>
+            </div>
+            <div class="voffset100"></div>
+          </div>
+        </div>
+        <div class="row no-gutter">
+          <div class="col-xs-12 col-md-4 text-center">
+            <h2 class="title-follow">MGMT</h2>
+            <div class="voffset40"></div>
+            <hr class="hidden-xs" />
+            <div class="voffset40"></div>
+            <p class="name">Estel.la Broto</p>
+            <p class="phone">
+              <a href="tel:+34-699-04-45-43">T+34 699 04 45 43</a>
+            </p>
+            <p class="email">
+              <a href="mailto:mgtm@music.com">info@groovin.cat</a>
+            </p>
+            <div class="voffset40"></div>
+
+            <hr class="hidden-xs" />
+          </div>
+          <div class="col-xs-12 col-md-4 text-center">
+            <h2 class="title-follow">BOOKING</h2>
+            <div class="voffset40"></div>
+            <hr class="hidden-xs" />
+            <div class="voffset40"></div>
+            <p class="name">Estel.la Broto</p>
+            <p class="phone">
+              <a href="tel:+34-699-04-45-43">T+34 699 04 45 43</a>
+            </p>
+            <p class="email">
+              <a href="mailto:booking@music.com">info@groovin.cat</a>
+            </p>
+            <div class="voffset40"></div>
+            <hr class="hidden-xs" />
+          </div>
+
+          <div class="col-xs-12 col-md-4 text-center">
+            <h2 class="title-follow">info</h2>
+            <div class="voffset40"></div>
+            <hr class="hidden-xs" />
+            <div class="voffset40"></div>
+            <p class="name">Sónia Anton</p>
+            <p class="phone">
+              <a href="tel:+34-626-05-58-57">T+34 626 05 58 57</a>
+            </p>
+            <p class="email">
+              <a href="mailto:info@music.com">info@groovin.cat</a>
+            </p>
+            <div class="voffset40"></div>
+            <hr class="hidden-xs" />
+          </div>
+        </div>
+
+        <div class="row social">
+          <a href="#"><img src="images/social/logo01.png" alt="logo01" /></a>
+          <a href="https://instagram.com/groovin.cat"
+            ><img src="images/social/logo02.png" alt="logo02"
+          /></a>
+          <a href="#"><img src="images/social/logo03.png" alt="logo03" /></a>
+          <a href="#"><img src="images/social/logo04.png" alt="logo04" /></a>
+          <a href="#"><img src="images/social/logo05.png" alt="logo05" /></a>
+        </div>
+
+        <div class="voffset80"></div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="container">
+        <p class="copy">© 2024. All Rights Reserved.</p>
+        <ul class="menu-footer">
+          <li>
+            <p>Amb el suport de:</p>
+          </li>
+          <li>
+            <a href="https://gencat.cat"
+              ><img src="images/gencat.png" alt="Generalitat de Catalunya"</a
+            >
+          </li>
+          <li>
+            <a href="https://vilanova.cat"
+              ><img src="images/vilanova.png" alt="Ajuntament de Vilanova i la
+              Geltrú"</a
+            >
+          </li>
+          <li>
+            <a href="https://girona.cat"
+              ><img src="images/ajgirona.png" alt="Ajuntament de Girona"</a
+            >
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+    <!--[if lt IE 7]>
+      <p class="browsehappy">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="http://browsehappy.com/">upgrade your browser</a> to improve
+        your experience.
+      </p>
+    <![endif]-->
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-XCE1RLWV1D"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-XCE1RLWV1D");
+    </script>
+
+    <script src="scripts/vendor/jquery.js"></script>
+    <script src="scripts/vendor/jquery.superslides.min.js"></script>
+    <script src="scripts/vendor/flickity.pkgd.js"></script>
+    <script src="scripts/vendor/audio.min.js"></script>
+    <script src="scripts/vendor/twitterFetcher_min.js"></script>
+    <script src="scripts/vendor/isotope.pkgd.min.js"></script>
+    <script src="scripts/vendor/jquery.swipebox.min.js"></script>
+    <script src="scripts/vendor/TimeCircles.js"></script>
+    <script src="scripts/vendor/owl.carousel.min.js"></script>
+    <script src="scripts/vendor/jquery.parallax.min.js"></script>
+
+    <script src="scripts/discography.js"></script>
+    <script src="scripts/news.js"></script>
+    <script src="scripts/main.js"></script>
+    <script src="scripts/YTPlayer.js"></script>
+
+    <script src="scripts/vendor/bootstrap.js"></script>
+    <!-- Countdown Next Show -->
+    <script src="scripts/vendor/countdown.js"></script>
   </body>
 </html>
