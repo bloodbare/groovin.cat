@@ -2276,7 +2276,7 @@ h2.title.inverse:after {
 
 @media (min-width: 768px) {
   .upcomming-events-list li .name {
-    max-width: 360px;
+    width: 360px;
     text-align: left;
   }
 }
@@ -2310,7 +2310,7 @@ h2.title.inverse:after {
   .upcomming-events-list li .venue {
     border-left: 1px solid rgba(43, 43, 43, 0.9);
     border-right: 1px solid rgba(43, 43, 43, 0.9);
-    max-width: 312px;
+    max-width: 286px;
   }
 }
 
